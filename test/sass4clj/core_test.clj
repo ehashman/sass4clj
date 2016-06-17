@@ -4,12 +4,12 @@
   (:import [java.io File]))
 
 (def sass
-"$test: #fff;
+  "$test: #fff;
 @import \"resources/test/foo.scss\";
 a { color: $test;}")
 
 (def css
-"h1 {
+  "h1 {
   font-size: 12px; }
 
 a {

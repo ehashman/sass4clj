@@ -1,15 +1,15 @@
 (ns sass4clj.core
   (:require
-    [clojure.java.io :as io]
-    [clojure.string :as string]
-    [sass4clj.util :as util]
-    [sass4clj.webjars :as webjars])
+   [clojure.java.io :as io]
+   [clojure.string :as string]
+   [sass4clj.util :as util]
+   [sass4clj.webjars :as webjars])
   (:import
-    [java.io IOException File]
-    [java.net JarURLConnection URL URI]
-    [java.util Collection Collections]
-    [io.bit3.jsass CompilationException Options Output OutputStyle]
-    [io.bit3.jsass.importer Import Importer]))
+   [java.io IOException File]
+   [java.net JarURLConnection URL URI]
+   [java.util Collection Collections]
+   [io.bit3.jsass CompilationException Options Output OutputStyle]
+   [io.bit3.jsass.importer Import Importer]))
 
 (defn find-local-file [file current-dir]
   (let [f (io/file current-dir file)]
@@ -72,7 +72,7 @@
           ; (util/info "Found base: %s name: %s\n" base name)
           ; jsass doesn't know how to read content from other than files?
           (Collections/singletonList
-            (Import. name base (slurp uri))))))))
+           (Import. name base (slurp uri))))))))
 
 (def ^:private output-styles
   {:nested OutputStyle/NESTED
