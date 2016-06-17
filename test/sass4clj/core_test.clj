@@ -5,7 +5,7 @@
 
 (def sass
 "$test: #fff;
-@import \"foo.scss\";
+@import \"resources/test/foo.scss\";
 a { color: $test;}")
 
 (def css
