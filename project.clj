@@ -1,4 +1,4 @@
-(defproject sass4clj "0.1.0-SNAPSHOT"
+(defproject ehashman/sass4clj "0.1.0-SNAPSHOT"
   :description "Clojure wrapper for jsass"
   :lein-release {:deploy-via :clojars}
   :url "https://github.com/ehashman/sass4clj"
